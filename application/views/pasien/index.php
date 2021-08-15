@@ -53,8 +53,9 @@
               <td><?=$data['profesi'];?></td>
               <td><?=date('d F Y', strtotime($data['tanggal_dibuat']));?></td>
               <td>
-                <a href="<?=base_url('pasien/editPasien');?>/<?=$data['nrm'];?>" class="badge badge-success">Edit</a>
-                <a href="<?=base_url('pasien/hapusPasien');?>/<?=$data['nrm'];?>" class="badge badge-danger" onclick="return confirm('anda yakin?');">Hapus</a>
+                <a href="<?=base_url('pasien/printPasien');?>/<?=$data['nrm'];?>" target="_blank" class="badge badge-info"><i class='bx bxs-printer'></i></a>
+                <a href="<?=base_url('pasien/editPasien');?>/<?=$data['nrm'];?>" class="badge badge-success"><i class='bx bx-edit' ></i></a>
+                <a href="<?=base_url('pasien/hapusPasien');?>/<?=$data['nrm'];?>" class="badge badge-danger" onclick="return confirm('anda yakin?');"><i class='bx bx-trash' ></i></a>
               </td>
             </tr>
             <?php endforeach;?>

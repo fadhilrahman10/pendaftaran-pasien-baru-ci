@@ -144,4 +144,11 @@ class Pasien extends CI_Controller
         }
     }
 
+    public function printPasien($id)
+    {
+        # code...
+        $data['pasien'] = $this->mod->get('pasien', ['nrm' => $id], true);
+        $this->load->view('pasien/print.php', $data);
+    }
+
 }
