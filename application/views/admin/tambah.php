@@ -1,9 +1,9 @@
 <section class="home-section">
-  <div class="text">Dashboard</div>
+  <div class="text"><?=$judul;?></div>
   <div class="container-fluid">
     <div class="row">
       <div class="col-12">
-        <a href="<?=base_url('admin');?>" class="btn btn-dark">Kembali</a>
+        <a href="<?=base_url('admin');?>" class="btn btn-dark"><i class='bx bxs-left-arrow'></i> Kembali</a>
       </div>
     </div>
     <div class="row mt-4">

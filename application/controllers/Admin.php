@@ -69,7 +69,7 @@ class Admin extends CI_Controller
     public function editAdmin($id)
     {
         # code...
-        $data['judul'] = 'Tambah Admin Baru';
+        $data['judul'] = 'Edit Admin';
         $data['admin'] = $this->mod->get('admin', ['no_admin' => $id], true);
 
         $this->form_validation->set_rules('nama', 'Nama', 'required|alpha_numeric_spaces');
